@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="32dp"
+    tools:context=".ui.main.MandalartDetailFragment">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back_button_description"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mandalart_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="세부목표 1" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mandalart_detail_title">
+
+        <EditText
+            android:id="@+id/sub_goal_1"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_1_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/sub_goal_2"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_2_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/sub_goal_3"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_3_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/sub_goal_4"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_4_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/parent_goal"
+            style="@style/MandalartCell.Final"
+            android:autofillHints="name"
+            android:hint="@string/parent_goal_hint"
+            android:inputType="textMultiLine"
+            tools:text="목표 1" />
+
+        <EditText
+            android:id="@+id/sub_goal_5"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_5_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/sub_goal_6"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_6_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/sub_goal_7"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_7_hint"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/sub_goal_8"
+            style="@style/MandalartCell"
+            android:autofillHints="name"
+            android:hint="@string/sub_goal_8_hint"
+            android:inputType="textMultiLine" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

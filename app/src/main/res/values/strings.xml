@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Plander</string>
+    <string name="delete">삭제</string>
+    <string name="enter_task">할 일 입력</string>
+    <string name="back_button_description">뒤로가기</string>
+    <string name="sub_goal_1_hint">세부목표 1</string>
+    <string name="sub_goal_2_hint">세부목표 2</string>
+    <string name="sub_goal_3_hint">세부목표 3</string>
+    <string name="sub_goal_4_hint">세부목표 4</string>
+    <string name="parent_goal_hint">상위 목표</string>
+    <string name="sub_goal_5_hint">세부목표 5</string>
+    <string name="sub_goal_6_hint">세부목표 6</string>
+    <string name="sub_goal_7_hint">세부목표 7</string>
+    <string name="sub_goal_8_hint">세부목표 8</string>
+    <string name="mandalart_tip">TIP! 중앙 목표를 클릭하여 세부 목표를 설정하고, 주변 목표를 클릭하여 핵심 목표를 설정하세요.</string>
+</resources>

@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TimeCapsule" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <!-- 시스템 네비게이션 바 색상 설정 -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        
+        <!-- 앱 전체 기본 폰트 설정 -->
+        <item name="android:fontFamily">@font/cafe24_surround</item>
+    </style>
+
+    <style name="Theme.TimeCapsule" parent="Base.Theme.TimeCapsule">
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/plander</item>
+        <item name="android:windowSplashScreenBackground">#f1cec5</item>
+    </style>
+
+    <!-- 하단 네비게이션 액티브 인디케이터 스타일 -->
+    <style name="MyBottomNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/bottom_nav_item_background_active</item>
+    </style>
+
+    <!-- NumberPicker 스타일 ✨ 추가 -->
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/on_background</item>
+    </style>
+
+    <!-- 캘린더 요일 헤더 스타일 -->
+    <style name="CalendarDayHeader">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodySmall</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- 토글 버튼 그룹 전용 테마 -->
+    <style name="MyToggleButtonTheme">
+        <item name="colorPrimary">@color/list_view_toggle_active</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+    </style>
+
+</resources>

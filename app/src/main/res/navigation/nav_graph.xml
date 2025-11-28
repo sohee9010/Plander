@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_list">
+
+    <!-- 목록 화면 -->
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.timecapsule.ui.main.ListFragment"
+        android:label="목록"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_list_to_createGoalCapsule"
+            app:destination="@id/createGoalCapsuleFragment" />
+        <action
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_list_to_mandalart_detail_view"
+            app:destination="@id/mandalartDetailViewFragment" />
+        <action
+            android:id="@+id/action_list_to_archive_list"
+            app:destination="@id/archiveBottleFragment" />
+    </fragment>
+
+    <!-- 캘린더 화면 -->
+    <fragment
+        android:id="@+id/navigation_calendar"
+        android:name="com.example.timecapsule.ui.main.CalendarFragment"
+        android:label="캘린더"
+        tools:layout="@layout/fragment_calendar" />
+
+    <!-- 만다라트 화면 -->
+    <fragment
+        android:id="@+id/navigation_mandalart"
+        android:name="com.example.timecapsule.ui.main.MandalartFragment"
+        android:label="만다라트"
+        tools:layout="@layout/fragment_mandalart">
+        <action
+            android:id="@+id/action_mandalart_to_detail"
+            app:destination="@id/navigation_mandalart_detail" />
+        <action
+            android:id="@+id/action_mandalartFragment_to_mandalartDetailFragment"
+            app:destination="@id/navigation_mandalart_detail" />
+        <action
+            android:id="@+id/action_mandalartFragment_to_mandalartDetailViewFragment"
+            app:destination="@id/mandalartDetailViewFragment" />
+    </fragment>
+
+    <!-- 만다라트 상세 화면 -->
+    <fragment
+        android:id="@+id/navigation_mandalart_detail"
+        android:name="com.example.timecapsule.ui.main.MandalartDetailFragment"
+        android:label="세부 목표"
+        tools:layout="@layout/fragment_mandalart_detail">
+        <argument
+            android:name="goalName"
+            app:argType="string" />
+        <argument
+            android:name="goalIndex"
+            app:argType="integer" />
+    </fragment>
+
+    <!-- 보관함 화면 -->
+    <fragment
+        android:id="@+id/navigation_archive"
+        android:name="com.example.timecapsule.ui.main.ArchiveFragment"
+        android:label="보관함"
+        tools:layout="@layout/fragment_archive">
+        <action
+            android:id="@+id/action_archive_to_detail"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_archive_to_mandalart_detail_view"
+            app:destination="@id/mandalartDetailViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/archiveListFragment"
+        android:name="com.example.timecapsule.ui.main.ArchiveListFragment"
+        android:label="완료된 목표"
+        tools:layout="@layout/fragment_archive_list" />
+
+    <fragment
+        android:id="@+id/archiveBottleFragment"
+        android:name="com.example.timecapsule.ui.main.ArchiveBottleFragment"
+        android:label="완료된 목표"
+        tools:layout="@layout/fragment_archive_bottle" />
+
+    <!-- 목표 캡슐 생성 화면 -->
+    <fragment
+        android:id="@+id/createGoalCapsuleFragment"
+        android:name="com.example.timecapsule.ui.create.CreateGoalCapsuleFragment"
+        android:label="목표 캡슐 생성"
+        tools:layout="@layout/fragment_create_goal_capsule" />
+
+    <!-- 상세 화면 (Dialog) -->
+    <dialog
+        android:id="@+id/detailFragment"
+        android:name="com.example.timecapsule.ui.detail.DetailFragment"
+        android:label="상세" >
+        <argument
+            android:name="goalId"
+            app:argType="string" />
+    </dialog>
+
+    <!-- 만다라트 자세히 보기 화면 (Dialog) -->
+    <dialog
+        android:id="@+id/mandalartDetailViewFragment"
+        android:name="com.example.timecapsule.ui.main.MandalartDetailViewFragment"
+        android:label="만다라트 목표" >
+        <argument
+            android:name="goalId"
+            app:argType="string" />
+    </dialog>
+
+</navigation>

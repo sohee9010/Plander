@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
+    android:background="@drawable/dialog_congratulations_background">
+
+    <ImageView
+        android:id="@+id/iv_congrats_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_thumbs_up" 
+        android:contentDescription="목표 달성 축하 이미지"/>
+
+    <TextView
+        android:id="@+id/tv_congrats_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="목표 달성을 축하합니다!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/on_background"/>
+
+    <TextView
+        android:id="@+id/tv_congrats_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="드디어 디데이가 되었어요!"
+        android:textSize="16sp"
+        android:textColor="@color/on_surface"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/congrats_button_background"
+        android:text="확인"/>
+
+</LinearLayout>
