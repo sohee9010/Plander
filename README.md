@@ -1,7 +1,5 @@
 # 📅 플랜더 (Plander) : Future Planning Calendar
 
-# 📅 플랜더 (Plander) : 목표 관리 및 설계 앱
-
 ## 🎀 프로젝트 소개
 
 🏷 **프로젝트 명 : 플랜더(Plander) - 목표 관리 캘린더 앱 (캡스톤디자인)**
